@@ -1,5 +1,5 @@
 +++
-title = 'Atomic Products'
+title = 'Atomic Products V2'
 date = 2024-01-07T21:10:36-03:00
 draft = false
 weight = 1
@@ -15,21 +15,21 @@ An example of a Atomic Product would be a *Black Mountain Side Milled*
 The view for the records of this entity is under **PRODUCTS MASTER**
 **DATA > Products > Atomic Products**
 
-### Fields
+---
 
-{{% expand title="**Name**" %}}
-A human friendly way of recognizing a product   
-- Text
-- One
-- Required
-{{% /expand %}}
+### eFields
 
-* **Product Type:** 
-List of all the product types applicable for Atomic Products
-- Relationship to PMD > Atomic Product Types
-- Sorted by "Label"
-- One
-- Required if status equals active
+* **Name:** A human friendly way of recognizing a product
+    - Text
+    - One
+    - Required
+
+* **Product Type:** List of all the product types applicable for 
+Atomic Products
+    - Relationship to PMD > Atomic Product Types
+    - Sorted by "Label"
+    - One
+    - Required if status equals active
     
 * **Cannabis:** Representation of the cannabis component
     - Nested

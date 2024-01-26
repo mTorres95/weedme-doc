@@ -1,4 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://mtorres95.github.io/weedme-doc/'
 languageCode = 'en-us'
 title = 'Weed Me Documentation'
 theme = 'Relearn'
+
+[outputs]
+  home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE"]
