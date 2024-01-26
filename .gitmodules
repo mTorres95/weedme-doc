@@ -1,0 +1,9 @@
+[submodule "hugo-theme-relearn"]
+	path = hugo-theme-relearn
+	url = git@github.com:McShelby/hugo-theme-relearn.git
+[submodule "themes/hugo-theme-relearn"]
+	path = themes/hugo-theme-relearn
+	url = git@github.com:McShelby/hugo-theme-relearn.git
+[submodule "themes/Relearn"]
+	path = themes/Relearn
+	url = git@github.com:McShelby/hugo-theme-relearn.git
