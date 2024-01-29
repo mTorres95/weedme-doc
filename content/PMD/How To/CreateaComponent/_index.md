@@ -2,7 +2,7 @@
 title = "Create a component"
 date = "2024-01-27T21:52:12-03:00"
 draft = false
-weight = 2
+weight = 1
 +++
 
 **1.** Navigate to \"Components\" tab

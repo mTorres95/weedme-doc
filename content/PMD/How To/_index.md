@@ -5,37 +5,36 @@ draft = false
 weight = 2
 +++
 
-### Option 1: link 
+### Creating this tutorials
 
-[Create a component](/Components/3.1.CreateaComponent.pdf)
+The objective is to convert the Scribe's PDFs into markdown files
 
-**Pro:** The search highlights it (only if you're in the "How To" page)
+1. Start by creating a folder for each "tutorial" according to the
+[Scribe PDFs](https://drive.google.com/drive/u/0/folders/1RlThL1C-CQTR0bWSAStBjraZ7T4qaj3u)
 
-**Con:** It directs you to the pdf, making you loose the menu on the left
-(You can, however, just go back)
+2. Take the screenshoots from the PDF (or the app itself if you think
+that'd look better) and save them in the just created folder
 
----
+3. Create a new file `_index.md` <- MUST have this title
 
-### Option 2: embed
+4. Write the header of `_index.md`. Replace the variables `[]`
 
-{{< pdf "/Components/3.1.CreateaComponent.pdf" >}}
+```
++++
+title = '[title of the page]'
+date = [today in ISO 8601 format]
+draft = false
+weight = [integer of the order in the menu]
++++
+```
 
-**Pro:** You get the PDF in the page
+5. Write the content of `_index.md`
 
-**Con:** You have to scroll and in order to use the search, we'd have to
-add a title, which could be a bit too repetitive (the title is in 
-the "name" of the embed and in the PDF itself)
+    Example for instruction: 
 
----
+    > If you write `**1.** Navigate to "Components" tab`   
+    > You'll see **1.** Navigate to "Components" tab
 
-### Option 3: go for a more manual approach
+    Adding picture:
 
-1. Navigate to "Components" tab
-
-![First step](/Components/CreateAComponent/1.png)
-
-**Pro:** Looks more integrated
-
-**Con:** It's quite more manual work and can get long
-
-
+    > `![First step](1.png)`
