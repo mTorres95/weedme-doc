@@ -45,29 +45,27 @@ Product.
 - Integer
 - One
 - Required `Atomic Product notEmpty`
-- Fields: 
-    * **Profile:** 
-        - Relationship to PMD > Profiles
-        - Sorted by "Label"
-        - One
-        - Required
-    * **Weight:**
-        - Decimal
-        - One
-        - Required
-        - Override Label: "Weight (g)
-        - Help message: "The weight of the component in grams"
 {{% /expand %}}
 
-**GTIN:** 
+**GTIN:** Relationship to the GTINs records. Allows to relate the 
+unit GTINs to the case GTINs. If a GTIN is used by one Unit Product, 
+it cannot be reused by another.
+
+{{% expand title="**Details**" %}}
+- Relationship to PMD > GTINs
+- Sorted by "Label"
+- Unique
+- One
+- Required
+{{% /expand %}}
 
 **Status:** Whether or not Weed Me is actively working with this
 product or if this product needs to have its configurations reviewed
-> - ***Active***   -> Weed Me is currently working with this Atomic 
+> - ***Active***   -> Weed Me is currently working with this Unit 
 > Product
 > - ***Warning***  -> One or more of the relationships of this 
 > product needs to be reviewed
-> - ***Inactive*** -> Weed ME has decided to not work with this 
+> - ***Inactive*** -> Weed Me has decided to not work with this 
 > product anymore, it's like eliminating it from the system
 
 {{% expand title="**Details**" %}}
@@ -79,16 +77,18 @@ product or if this product needs to have its configurations reviewed
 
 **Components:** All the material components that form the product, 
 composed by **Component** (a relationship to the component record) 
-and **Quantity** (how many of each component does the product have) 
+and **Quantity** (how many of each component does the product have).   
+For Unit Products, this is required, since we need to specify how 
+we're encapsulating the Atomic Products.
 {{% expand title="**Details**" %}}
 - Nested
 - Manu
-- Not required
+- Required
 - Fields: 
     * **Component:** 
         - Relationship to PMD > Components
         - Sorted by "Label"
-        - Filtered by `level == "Atomic Product"` & `status == active`
+        - Filtered by `level == "Unit Product"` & `status == active`
         - Link enabled
         - One
         - Required
@@ -128,8 +128,9 @@ and **Quantity** (how many of each component does the product have)
 | Field | Admins |
 | --- | --- |
 | Name | Read/Write |
-| Product Type | Read/Write |
-| Cannabis | Read/Write |
+| Atomic Product | Read/Write |
+| Quantity | Read/Write |
+| GTIN | Read/Write |
 | Status | Read Only |
 | Components | Read/Write |
 | Warning message | Read only |
