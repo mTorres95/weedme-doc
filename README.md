@@ -39,25 +39,27 @@ cd weed-me
 git submodule update --init --recursive
 ```
 
-4. Start hugo
+# Add the "How To" flows
+
+1. Start hugo
 
 ```
 hugo server
 ```
 
-5. On your browser, go to `localhost:1313/weedme-doc/` -> the previous
+2. On your browser, go to `localhost:1313/weedme-doc/` -> the previous
 command will indicate that, showing you something like this:
 ```
 Web Server is available at http://localhost:1313/weedme-doc/ (bind 
 address 127.0.0.1) 
 ```
 
-6. Open the `weedme-doc` folder in Visual Studio code
+3. Open the `weedme-doc` folder in Visual Studio code
 ```
 code .
 ```
 
-7. Go to `PMD > How To` and create a new folder with the name like
+4. Go to `PMD > How To` and create a new folder with the name like
 the PDF you're going to add to the tutorial.
 
     *Example:* To add [this PDF](https://drive.google.com/file/d/1IPe4rNCSi-XoQx8OHmUmL9QL3A-5560q/view?usp=drive_link)
@@ -75,13 +77,17 @@ the PDF you're going to add to the tutorial.
     +++
     ```
 
-8. In the just created `_index.md`, add the steps and the images
+5. In the just created `_index.md`, add the steps and the images
 
     * Add the image: `![](nameOfPicture.png)`
 
-9. Once you've *finished* and like how the page looks, update GitHub
+6. Once you've *finished* and like how the page looks, update GitHub.
+It is **very important** to pull before pushing.
 
     * `git add .`
     * `git commit -m "How To - Create a Component"` <- replace the 
     *Create a Component* by the correct name
-    * `git status`
+    * `git pull origin main` <- this will get you any changes someone
+    else has made while you where working, so you don't have merge
+    issues. If you do find merge issues, contact one of the devs.
+    * `git push origin main`
