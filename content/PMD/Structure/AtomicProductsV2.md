@@ -1,8 +1,7 @@
 +++
-title = 'Atomic Products V2'
+title = 'Atomic Products V2 - Test'
 date = 2024-01-07T21:10:36-03:00
-draft = false
-weight = 1
+draft = true
 +++
 
 This entity represents the smallest, indivisible part of the product.
@@ -15,9 +14,7 @@ An example of a Atomic Product would be a *Black Mountain Side Milled*
 The view for the records of this entity is under **PRODUCTS MASTER**
 **DATA > Products > Atomic Products**
 
----
-
-### eFields
+### Fields
 
 * **Name:** A human friendly way of recognizing a product
     - Text

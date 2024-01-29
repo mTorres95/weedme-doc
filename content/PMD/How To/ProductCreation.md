@@ -5,4 +5,24 @@ draft = false
 weight = 1
 +++
 
-Should be erased... maybe, let me see
+
+## Create a component
+
+1. **Log in as User**
+
+2. asdag
+
+![as](/Components/Creation/1.png)
+
+3. asdag
+
+![as](/Components/Creation/1.png)
+
+4. asdag
+
+![as](/Components/Creation/1.png)
+
+5. asdag
+
+![as](/Components/Creation/1.png)
+

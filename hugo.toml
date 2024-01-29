@@ -3,5 +3,11 @@ languageCode = 'en-us'
 title = 'Weed Me Documentation'
 theme = 'Relearn'
 
+[params]
+  themeVariant = [ "learn" ]
+  titleSeparator = "-"
+
 [outputs]
   home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE"]
+
+
