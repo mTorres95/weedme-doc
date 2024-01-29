@@ -57,3 +57,31 @@ address 127.0.0.1)
 code .
 ```
 
+7. Go to `PMD > How To` and create a new folder with the name like
+the PDF you're going to add to the tutorial.
+
+    *Example:* To add [this PDF](https://drive.google.com/file/d/1IPe4rNCSi-XoQx8OHmUmL9QL3A-5560q/view?usp=drive_link)
+    titled *"3.1. Create a Component"*, create a folder called 
+    `CreateaComponent` and ***in*** this folder, save the images 
+    taken as screenshoots from the PDF and create a new file called 
+    `_index.md`, that needs this header:
+
+    ```
+    +++
+    title = 'Create a Component'
+    date = 2024-01-08T15:26:41-03:00
+    draft = false
+    weight = [a integer indicating it's position on the menu]
+    +++
+    ```
+
+8. In the just created `_index.md`, add the steps and the images
+
+    * Add the image: `![](nameOfPicture.png)`
+
+9. Once you've *finished* and like how the page looks, update GitHub
+
+    * `git add .`
+    * `git commit -m "How To - Create a Component"` <- replace the 
+    *Create a Component* by the correct name
+    * `git status`
