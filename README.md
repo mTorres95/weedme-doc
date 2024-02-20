@@ -59,6 +59,9 @@ address 127.0.0.1)
 code .
 ```
 
+4. Before starting to modify, try a `git pull` in case someone else
+has pushed some new changed. Do this each time!
+
 4. Go to `PMD > How To` and create a new folder with the name like
 the PDF you're going to add to the tutorial.
 
