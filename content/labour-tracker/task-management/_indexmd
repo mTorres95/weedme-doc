@@ -1,0 +1,29 @@
++++
+title = "Task Management"
+weight = 100
++++
+
+This document outlines the functionalities available to supervisors for managing
+tasks within the system. Real-time task handling is crucial for accurate time
+tracking.
+
+## Supervisor Responsibilities
+
+- **Task Creation and Assignment:**
+  - Create new tasks with a Pending status.
+  - Specify the task type and product.
+  - Assign idle workers currently available in the facility.
+  - Start the task, changing the status to Active.
+- **Task Management:**
+  - Pause an active task for breaks and resume work later.
+  - Manage workers assigned to active tasks:
+    - Assign additional idle workers.
+    - Withdraw active workers from the task.
+    - Reassign workers from one active task to another.
+- **Task Completion:**
+  - Mark a task as complete and specify the quantity of items produced.
+
+## Production Admin
+
+Production Admins have the authority to review tasks and request corrections
+from supervisors. They can also directly edit task data if necessar
